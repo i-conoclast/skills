@@ -1,17 +1,17 @@
-# 제약 조건 정의
+# Define Constraints
 
-프로젝트의 제약 조건을 정의합니다.
+Defines project constraints.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. 기술적 제약
-2. 비즈니스 제약
-3. 시간/리소스 제약
+1. Technical constraints
+2. Business constraints
+3. Time/resource constraints
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-## 출력 형식
+## Output Format
 
-.claude/templates/spec/define-constraints.md 형식
+.claude/templates/spec/define-constraints.md format

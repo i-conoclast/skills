@@ -1,31 +1,31 @@
-# 새 파일 생성
+# Create New File
 
-새로운 파일을 생성합니다.
+Creates a new file.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. plan:files 결과에서 생성할 파일 확인
-2. 파일 경로 및 디렉토리 생성
-3. 기본 구조 작성 (imports, 클래스/함수 스켈레톤)
-4. Docstring 작성
-5. 타입 힌트 추가
-6. 기본 구현 (필요시)
+1. Check files to create from plan:files results
+2. Create file paths and directories
+3. Write basic structure (imports, class/function skeletons)
+4. Write Docstrings
+5. Add type hints
+6. Basic implementation (if needed)
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-- 파일 경로: "src/services/batch.py"
-- 옵션 `--from-design <경로>`: 설계 문서 기반 생성
-- 옵션 `--template <타입>`: router, service, model 등 템플릿 사용
+- File path: "src/services/batch.py"
+- Option `--from-design <path>`: Generate based on design document
+- Option `--template <type>`: Use templates such as router, service, model
 
-## 생성 규칙
+## Creation Rules
 
-- 프로젝트 컨벤션 준수
-- 파일 상단에 모듈 Docstring
-- 타입 힌트 필수
-- TODO 마커로 미구현 부분 표시
+- Follow project conventions
+- Module Docstring at the top of the file
+- Type hints required
+- Mark unimplemented parts with TODO markers
 
-## 출력 형식
+## Output Format
 
-.claude/templates/impl/create.md 형식
+.claude/templates/impl/create.md format

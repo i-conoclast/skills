@@ -1,43 +1,43 @@
 ---
 name: impl-review
-description: 구현 품질 리뷰 워크플로우. 코드 레벨 분석 및 개선 제안
+description: Implementation quality review workflow. Code-level analysis and improvement suggestions
 ---
 
-# 구현 리뷰
+# Implementation Review
 
-## 사용법
+## Usage
 
 ```
-/impl-review <대상>
-/impl-review <대상> --with-research    # 외부 조사 포함
-/impl-review <대상> --fix              # 분석 후 refactor 연계
+/impl-review <target>
+/impl-review <target> --with-research    # Include external research
+/impl-review <target> --fix              # Link to refactor after analysis
 ```
 
-## 실행 단계
+## Execution Steps
 
-### Phase 1: 코드 분석 (explore)
-- `explore:analyze-code` - 동작 분석
-- `explore:find-deps` - 의존성 확인
-- `explore:find-duplicates` - 중복 탐지
+### Phase 1: Code Analysis (explore)
+- `explore:analyze-code` - Behavior analysis
+- `explore:find-deps` - Check dependencies
+- `explore:find-duplicates` - Detect duplicates
 
-### Phase 2: 외부 조사 (research) [--with-research]
-- `research:search-patterns` - 더 나은 패턴 조사
-- `research:search-libs` - 대안 라이브러리 탐색
+### Phase 2: External Research [--with-research]
+- `research:search-patterns` - Research better patterns
+- `research:search-libs` - Explore alternative libraries
 
-### Phase 3: 분석 리포트
-5가지 관점에서 평가:
-- **성능**: 불필요한 연산, 알고리즘 효율
-- **가독성**: 명명, 구조, 주석
-- **유지보수성**: 결합도, 응집도, 테스트 용이성
-- **확장성**: 인터페이스 설계, 변경 용이성
-- **보안**: 입력 검증, 인증/인가
+### Phase 3: Analysis Report
+Evaluate from 5 perspectives:
+- **Performance**: Unnecessary computations, algorithm efficiency
+- **Readability**: Naming, structure, comments
+- **Maintainability**: Coupling, cohesion, testability
+- **Extensibility**: Interface design, ease of change
+- **Security**: Input validation, authentication/authorization
 
-심각도 분류:
-- 🔴 Critical: 버그, 보안 취약점
-- 🟡 Warning: 개선 권장
-- 🔵 Info: 참고/스타일
+Severity classification:
+- 🔴 Critical: Bugs, security vulnerabilities
+- 🟡 Warning: Improvement recommended
+- 🔵 Info: Reference/style
 
-### Phase 4: --fix 시 refactor 연계
+### Phase 4: Link to refactor with --fix
 
-### Phase 5: 리포트 저장
+### Phase 5: Save Report
 - `docs/reports/review/{target}_{YYYY-MM-DD}.md`

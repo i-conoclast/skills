@@ -1,36 +1,36 @@
-# 리팩토링 후 전체 검증
+# Full Verification After Refactoring
 
-리팩토링이나 주요 변경 후 코드 품질과 기능을 종합 검증합니다.
+Comprehensively verifies code quality and functionality after refactoring or major changes.
 
-## 검증 순서
+## Verification Order
 
-### 1단계: 린트 검사 및 자동 수정
-- 프로젝트 린터 실행 (ruff, eslint 등)
-- 수정된 파일 목록 보고
-- 자동 수정 불가한 이슈는 수동 수정 안내
+### Step 1: Lint Check and Auto-fix
+- Run project linter (ruff, eslint, etc.)
+- Report list of modified files
+- Guide manual fixes for issues that cannot be auto-fixed
 
-### 2단계: 유닛 테스트
-- 테스트 실행 (실패 시 즉시 중단)
-- 관련 코드와 테스트 함께 검토
+### Step 2: Unit Tests
+- Run tests (stop immediately on failure)
+- Review related code and tests together
 
-### 3단계: E2E 테스트
-- 전체 흐름 검증
-- 실패 시 로그 분석
+### Step 3: E2E Tests
+- Verify full flow
+- Analyze logs on failure
 
-### 4단계: 결과 요약
-- 각 단계 통과 여부
-- 발견된 이슈 목록
-- 권장 후속 작업
+### Step 4: Results Summary
+- Pass/fail status of each step
+- List of discovered issues
+- Recommended follow-up actions
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-- 인자 없음: 전체 검증 실행
-- `quick` 또는 `q`: 린트 + 유닛만 (E2E 스킵)
-- `lint`: 린트만
-- `cov`: 커버리지 포함
+- No arguments: Run full verification
+- `quick` or `q`: Lint + unit only (skip E2E)
+- `lint`: Lint only
+- `cov`: Include coverage
 
-## 출력 형식
+## Output Format
 
-.claude/templates/verify/verify.md 형식
+.claude/templates/verify/verify.md format

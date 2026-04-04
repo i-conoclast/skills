@@ -1,46 +1,46 @@
 ---
 name: spec
-description: 요구사항 정의 및 문서화. 자연어 요청 시 적절한 커맨드를 선택하여 실행
+description: Requirements definition and documentation. Selects and executes appropriate commands for natural language requests
 tools: Read, Write, Skill
 ---
 
-# 역할
+# Role
 
-사용자의 요구사항 정의 요청을 분석하여 적절한 spec 커맨드를 선택/조합하여 실행한다.
+Analyzes user's requirements definition requests and selects/combines appropriate spec commands to execute.
 
-# 사용 가능한 커맨드
+# Available Commands
 
-| 커맨드 | 용도 | 호출 방법 |
+| Command | Purpose | Invocation |
 |--------|------|----------|
-| spec:define-fr | 기능 요구사항 | `/spec:define-fr "<기능>"` |
-| spec:define-nfr | 비기능 요구사항 | `/spec:define-nfr "<기능>"` |
-| spec:define-constraints | 제약 조건 | `/spec:define-constraints "<기능>"` |
-| spec:define-criteria | 성공 기준 | `/spec:define-criteria "<기능>"` |
-| spec:define-scenarios | 테스트 시나리오 | `/spec:define-scenarios "<기능>"` |
+| spec:define-fr | Functional requirements | `/spec:define-fr "<feature>"` |
+| spec:define-nfr | Non-functional requirements | `/spec:define-nfr "<feature>"` |
+| spec:define-constraints | Constraints | `/spec:define-constraints "<feature>"` |
+| spec:define-criteria | Success criteria | `/spec:define-criteria "<feature>"` |
+| spec:define-scenarios | Test scenarios | `/spec:define-scenarios "<feature>"` |
 
-# 실행 로직
+# Execution Logic
 
-사용자 입력: $ARGUMENTS
+User Input: $ARGUMENTS
 
-1. **자연어 요청 분석**
-2. **적절한 커맨드 선택**:
-   - "기능", "요구사항", "필요", "해야" → spec:define-fr
-   - "성능", "보안", "확장", "비기능" → spec:define-nfr
-   - "제약", "한계", "불가능" → spec:define-constraints
-   - "성공", "완료", "기준", "조건" → spec:define-criteria
-   - "시나리오", "테스트", "케이스" → spec:define-scenarios
-3. **필요시 전체 스펙 작성**: 모든 커맨드 순차 실행
-4. **docs/specs/에 저장**
+1. **Analyze natural language request**
+2. **Select appropriate command**:
+   - "feature", "requirement", "need", "must" → spec:define-fr
+   - "performance", "security", "scalability", "non-functional" → spec:define-nfr
+   - "constraint", "limitation", "impossible" → spec:define-constraints
+   - "success", "completion", "criteria", "condition" → spec:define-criteria
+   - "scenario", "test", "case" → spec:define-scenarios
+3. **Write full spec if needed**: Execute all commands sequentially
+4. **Save to docs/specs/**
 
-# 커맨드 호출 방법
+# Command Invocation
 
-Skill tool 사용:
+Using the Skill tool:
 ```
 Skill(skill="spec:define-fr", args="Multi-tenant support")
 Skill(skill="spec:define-nfr", args="Multi-tenant support")
 ```
 
-# 참조
+# References
 
-- 출력 형식: .claude/templates/spec/*.md
-- 저장 위치: docs/specs/
+- Output format: .claude/templates/spec/*.md
+- Save location: docs/specs/

@@ -1,53 +1,53 @@
 ---
 name: review-perspectives
-description: 코드 리뷰 관점 및 심각도 기준
+description: Code review perspectives and severity criteria
 ---
 
-# 리뷰 관점
+# Review Perspectives
 
-## 5가지 평가 관점
+## 5 Evaluation Perspectives
 
-### 1. 성능 (Performance)
-- 불필요한 반복/연산
-- 알고리즘 시간복잡도
-- 메모리 사용 패턴
-- I/O 효율성
+### 1. Performance
+- Unnecessary iterations/computations
+- Algorithm time complexity
+- Memory usage patterns
+- I/O efficiency
 
-### 2. 가독성 (Readability)
-- 변수/함수 명명
-- 함수 크기 (30줄 이내 권장)
-- 코드 구조화
-- 적절한 추상화 수준
+### 2. Readability
+- Variable/function naming
+- Function size (30 lines or less recommended)
+- Code structuring
+- Appropriate abstraction level
 
-### 3. 유지보수성 (Maintainability)
-- 결합도 (낮을수록 좋음)
-- 응집도 (높을수록 좋음)
-- 테스트 용이성
-- 문서화
+### 3. Maintainability
+- Coupling (lower is better)
+- Cohesion (higher is better)
+- Testability
+- Documentation
 
-### 4. 확장성 (Extensibility)
-- OCP (개방-폐쇄 원칙) 준수
-- 인터페이스 설계
-- 설정 가능성
+### 4. Extensibility
+- OCP (Open-Closed Principle) compliance
+- Interface design
+- Configurability
 
-### 5. 보안 (Security)
-- 입력 검증
-- 인증/인가
-- 민감 데이터 처리
-- 의존성 취약점
+### 5. Security
+- Input validation
+- Authentication/authorization
+- Sensitive data handling
+- Dependency vulnerabilities
 
-## 심각도 기준
+## Severity Criteria
 
-| 심각도 | 설명 | 예시 |
-|--------|------|------|
-| 🔴 Critical | 즉시 수정 필요 | 버그, 보안 취약점, 데이터 손실 위험 |
-| 🟡 Warning | 개선 권장 | 성능 이슈, 코드 중복, 복잡도 초과 |
-| 🔵 Info | 참고 사항 | 스타일, 명명 제안, 문서화 |
+| Severity | Description | Examples |
+|----------|-------------|----------|
+| 🔴 Critical | Immediate fix required | Bugs, security vulnerabilities, data loss risk |
+| 🟡 Warning | Improvement recommended | Performance issues, code duplication, excessive complexity |
+| 🔵 Info | For reference | Style, naming suggestions, documentation |
 
-## structure-check vs impl-review 차이
+## structure-check vs impl-review Differences
 
-| 항목 | structure-check | impl-review |
+| Item | structure-check | impl-review |
 |------|----------------|-------------|
-| 분석 수준 | 구조적 (파일/모듈) | 코드적 (함수/로직) |
-| 초점 | 크기, 복잡도, 의존성 | 품질, 패턴, 보안 |
-| 도구 | 메트릭 기반 | 코드 리뷰 기반 |
+| Analysis level | Structural (files/modules) | Code-level (functions/logic) |
+| Focus | Size, complexity, dependencies | Quality, patterns, security |
+| Tools | Metric-based | Code review-based |

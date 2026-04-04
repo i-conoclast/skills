@@ -1,39 +1,39 @@
 ---
 name: refactor-guidelines
-description: 안전한 리팩토링을 위한 가이드라인
+description: Guidelines for safe refactoring
 ---
 
-# 리팩토링 가이드라인
+# Refactoring Guidelines
 
-## 안전한 리팩토링 원칙
+## Safe Refactoring Principles
 
-1. **현재 상태 파악 필수**: explore로 사용처, 의존성, 영향 범위 확인
-2. **최소 변경 원칙**: 필요한 만큼만 변경
-3. **테스트 우선**: 기존 테스트 통과 확인 → 리팩토링 → 재검증
-4. **단계적 실행**: 작은 단위로 나누어 실행
+1. **Understand current state first**: Check usages, dependencies, and impact scope with explore
+2. **Minimal change principle**: Only change what is necessary
+3. **Tests first**: Verify existing tests pass → refactor → re-verify
+4. **Incremental execution**: Break into small units and execute
 
-## 리팩토링 유형별 가이드
+## Guide by Refactoring Type
 
-### 함수/메서드 추출
-- 30줄 이상 함수 → 단일 책임 기준으로 분리
-- 반복 코드 → 공통 함수 추출
+### Function/Method Extraction
+- Functions over 30 lines → Split by single responsibility
+- Repeated code → Extract common functions
 
-### 모듈 분리
-- 200줄 이상 파일 → 책임 기준으로 분리
-- 순환 의존성 → 인터페이스/추상 클래스로 해결
+### Module Separation
+- Files over 200 lines → Split by responsibility
+- Circular dependencies → Resolve with interfaces/abstract classes
 
-### 인터페이스 변경
-- 사용처 전수 조사 필수 (explore:find-usage)
-- 단계적 마이그레이션 권장
+### Interface Changes
+- Full usage investigation required (explore:find-usage)
+- Gradual migration recommended
 
-## 위험도 체크리스트
+## Risk Checklist
 
-- [ ] 테스트 커버리지 확인
-- [ ] 사용처 전수 조사
-- [ ] 순환 의존성 확인
-- [ ] 역호환성 검토
+- [ ] Verify test coverage
+- [ ] Full usage investigation
+- [ ] Check circular dependencies
+- [ ] Review backward compatibility
 
-## 관련 스킬
+## Related Skills
 
-- `/structure-check`: 구조 품질 점검 후 리팩토링 대상 식별
-- `/impl-review`: 코드 품질 리뷰 후 개선 필요 항목 식별
+- `/structure-check`: Identify refactoring targets after structure quality inspection
+- `/impl-review`: Identify items needing improvement after code quality review

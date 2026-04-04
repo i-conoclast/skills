@@ -1,39 +1,39 @@
-# Research 출력 형식
+# Research Output Format
 
-## 요약
+## Summary
 
-핵심 발견 사항 1-2문장
+Key findings in 1-2 sentences
 
-## 상세 분석
+## Detailed Analysis
 
-### 옵션 비교 (compare)
+### Option Comparison (compare)
 
-| 기준 | 옵션 A | 옵션 B |
-|------|--------|--------|
-| 성능 | | |
-| 학습 곡선 | | |
-| 커뮤니티 | | |
-| 라이선스 | | |
+| Criteria | Option A | Option B |
+|----------|----------|----------|
+| Performance | | |
+| Learning Curve | | |
+| Community | | |
+| License | | |
 
-### 라이브러리 비교 (search-libs)
+### Library Comparison (search-libs)
 
-| 라이브러리 | Stars | 최근 업데이트 | 장점 | 단점 |
-|-----------|-------|-------------|------|------|
+| Library | Stars | Last Updated | Pros | Cons |
+|---------|-------|--------------|------|------|
 
-### 패턴 조사 (search-patterns)
+### Pattern Research (search-patterns)
 
-| 패턴 | 적용 사례 | 장점 | 단점 |
-|------|----------|------|------|
+| Pattern | Use Cases | Pros | Cons |
+|---------|-----------|------|------|
 
-## 추천
+## Recommendation
 
-추천 사항 및 이유
+Recommendation and reasoning
 
-## 참고 자료
+## References
 
-- [출처 1](url)
-- [출처 2](url)
+- [Source 1](url)
+- [Source 2](url)
 
-## 프로젝트 적용 가이드
+## Project Application Guide
 
-현재 프로젝트에 적용하는 방법
+How to apply to the current project

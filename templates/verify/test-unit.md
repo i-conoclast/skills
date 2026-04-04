@@ -1,8 +1,8 @@
-## 유닛 테스트 결과
+## Unit Test Results
 
-**실행**: `pytest -m unit -x --tb=short`
-**결과**: N passed, M failed
+**Execution**: `pytest -m unit -x --tb=short`
+**Results**: N passed, M failed
 
-### 실패 테스트 (실패 시)
-| 테스트 | 에러 | 원인 |
-|--------|------|------|
+### Failed Tests (on failure)
+| Test | Error | Cause |
+|------|-------|-------|

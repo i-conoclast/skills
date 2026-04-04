@@ -1,68 +1,68 @@
 ---
 name: testing
-description: pytest 기반 테스트 작성 가이드. 테스트 관련 작업 시 참조
+description: pytest-based test writing guide. Reference for test-related tasks
 ---
 
-# 테스트 가이드
+# Test Guide
 
-## 테스트 구조
+## Test Structure
 
 ```
 tests/
-├── conftest.py          # 공유 Fixture
-├── unit/                # 유닛 테스트
+├── conftest.py          # Shared Fixtures
+├── unit/                # Unit tests
 │   ├── test_models.py
 │   └── test_services.py
-├── integration/         # 통합 테스트
+├── integration/         # Integration tests
 │   └── test_api.py
-└── e2e/                 # E2E 테스트
+└── e2e/                 # E2E tests
     └── test_workflow.py
 ```
 
-## 테스트 마커
+## Test Markers
 
 ```python
-@pytest.mark.unit        # 빠른 유닛 테스트
-@pytest.mark.e2e         # 전체 흐름 E2E
-@pytest.mark.slow        # 느린 테스트 (기본 제외)
-@pytest.mark.integration # 통합 테스트
+@pytest.mark.unit        # Fast unit tests
+@pytest.mark.e2e         # Full flow E2E
+@pytest.mark.slow        # Slow tests (excluded by default)
+@pytest.mark.integration # Integration tests
 ```
 
-## 실행 명령
+## Run Commands
 
 ```bash
-pytest                           # 전체 (slow 제외)
-pytest -m unit                   # 유닛만
-pytest -m e2e                    # E2E만
-pytest -m integration            # 통합만
-pytest --cov=src                 # 커버리지
-pytest -x --tb=short             # 실패 시 즉시 중단
+pytest                           # All (excluding slow)
+pytest -m unit                   # Unit only
+pytest -m e2e                    # E2E only
+pytest -m integration            # Integration only
+pytest --cov=src                 # Coverage
+pytest -x --tb=short             # Stop immediately on failure
 ```
 
-## 유닛 테스트 템플릿
+## Unit Test Template
 
 ```python
 import pytest
 from src.services.auth import AuthService
 
 class TestAuthService:
-    """AuthService 유닛 테스트"""
+    """AuthService unit tests"""
 
     @pytest.fixture
     def service(self):
         return AuthService()
 
-    # --- 정상 케이스 ---
+    # --- Normal cases ---
     def test_validate_valid_token(self, service):
         result = service.validate("valid-token")
         assert result.is_valid is True
 
-    # --- 예외 케이스 ---
+    # --- Exception cases ---
     def test_validate_expired_token(self, service):
         with pytest.raises(TokenExpiredError):
             service.validate("expired-token")
 
-    # --- 파라미터화 ---
+    # --- Parameterized ---
     @pytest.mark.parametrize("token,expected", [
         ("valid", True),
         ("invalid", False),
@@ -78,7 +78,7 @@ class TestAuthService:
         mock_provider.verify.assert_called_once_with("token")
 ```
 
-## Fixture 패턴 (conftest.py)
+## Fixture Patterns (conftest.py)
 
 ```python
 import pytest
@@ -99,18 +99,18 @@ def reset_state():
     # cleanup after each test
 ```
 
-## 디버깅 팁
+## Debugging Tips
 
 ```bash
-pytest -x -vv --tb=long    # 상세 출력
-pytest --pdb                # 디버거 진입
-pytest -s                   # stdout 출력
-pytest -k "test_auth"       # 이름 필터
+pytest -x -vv --tb=long    # Verbose output
+pytest --pdb                # Enter debugger
+pytest -s                   # stdout output
+pytest -k "test_auth"       # Name filter
 ```
 
-## 워크플로우
+## Workflow
 
-- 새 기능 테스트 작성: `/impl:test <대상>`
-- 유닛 테스트 실행: `/test-unit`
-- E2E 테스트 실행: `/test-e2e`
-- 전체 검증: `/verify`
+- Write tests for new features: `/impl:test <target>`
+- Run unit tests: `/test-unit`
+- Run E2E tests: `/test-e2e`
+- Full verification: `/verify`

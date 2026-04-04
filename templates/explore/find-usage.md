@@ -1,6 +1,6 @@
-## `{대상}` 사용처
+## `{target}` Usage Locations
 
-| # | 파일 | 라인 | 컨텍스트 |
-|---|------|------|----------|
+| # | File | Line | Context |
+|---|------|------|---------|
 
-**요약**: 총 N개 파일, M개 위치에서 사용
+**Summary**: Used in N files, M locations total

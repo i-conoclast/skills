@@ -1,38 +1,38 @@
-# Impl Review 출력 형식
+# Impl Review Output Format
 
-## 개요
+## Overview
 
-| 항목 | 값 |
-|------|---|
-| 파일 | `file_path` |
-| 줄 수 | N |
-| 함수 수 | N |
+| Item | Value |
+|------|-------|
+| File | `file_path` |
+| Lines | N |
+| Functions | N |
 
 ## Critical 🔴
 
-### 이슈 제목
-- **위치**: `file:line`
-- **설명**: 문제 설명
-- **영향**: 잠재적 영향
-- **제안**: 수정 방안
+### Issue Title
+- **Location**: `file:line`
+- **Description**: Problem description
+- **Impact**: Potential impact
+- **Suggestion**: Fix proposal
 
 ## Warning 🟡
 
-### 이슈 제목
-- **위치**: `file:line`
-- **설명**: 문제 설명
-- **제안**: 개선 방안
+### Issue Title
+- **Location**: `file:line`
+- **Description**: Problem description
+- **Suggestion**: Improvement proposal
 
 ## Info 🔵
 
-- 참고 사항 목록
+- Reference notes list
 
-## 요약
+## Summary
 
-| 관점 | 점수 | 주요 이슈 |
-|------|------|----------|
-| 성능 | ⭐⭐⭐ | |
-| 가독성 | ⭐⭐⭐ | |
-| 유지보수성 | ⭐⭐⭐ | |
-| 확장성 | ⭐⭐⭐ | |
-| 보안 | ⭐⭐⭐ | |
+| Aspect | Score | Key Issues |
+|--------|-------|------------|
+| Performance | ⭐⭐⭐ | |
+| Readability | ⭐⭐⭐ | |
+| Maintainability | ⭐⭐⭐ | |
+| Extensibility | ⭐⭐⭐ | |
+| Security | ⭐⭐⭐ | |

@@ -1,8 +1,8 @@
-## E2E 테스트 결과
+## E2E Test Results
 
-**실행**: `pytest -m e2e -x --tb=long`
-**결과**: N passed, M failed
+**Execution**: `pytest -m e2e -x --tb=long`
+**Results**: N passed, M failed
 
-### 실패 테스트 (실패 시)
-| 테스트 | 에러 | 원인 |
-|--------|------|------|
+### Failed Tests (on failure)
+| Test | Error | Cause |
+|------|-------|-------|

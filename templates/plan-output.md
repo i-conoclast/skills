@@ -1,49 +1,49 @@
-# Plan 출력 형식
+# Plan Output Format
 
-## 설계
+## Design
 
-### 파일 구조
+### File Structure
 ```
 src/
 ├── new_file.py
-└── existing_file.py (수정)
+└── existing_file.py (modified)
 ```
 
-### 인터페이스
+### Interface
 ```python
 class ServiceName:
     def method(self, param: Type) -> ReturnType: ...
 ```
 
-### 모듈 구조
-| 모듈 | 역할 |
+### Module Structure
+| Module | Role |
+|--------|------|
+
+## Implementation Tasks
+
+| # | Task | File | Risk Level |
+|---|------|------|------------|
+| 1 | Description | File path | 🟢/🟡/🔴 |
+
+## Changed Files
+
+### Created
+| File | Role |
 |------|------|
 
-## 구현 태스크
+### Modified
+| File | Change Description |
+|------|--------------------|
 
-| # | 태스크 | 파일 | 위험도 |
-|---|--------|------|--------|
-| 1 | 설명 | 파일경로 | 🟢/🟡/🔴 |
+### Deleted
+| File | Reason |
+|------|--------|
 
-## 변경 파일
+## Dependencies
 
-### 생성
-| 파일 | 역할 |
-|------|------|
+Newly required packages or internal module dependencies
 
-### 수정
-| 파일 | 변경 내용 |
-|------|----------|
+## Risk Factors
 
-### 삭제
-| 파일 | 사유 |
-|------|------|
-
-## 의존성
-
-새로 필요한 패키지 또는 내부 모듈 의존성
-
-## 위험 요소
-
-| 위험 | 영향 | 완화 방안 |
-|------|------|----------|
+| Risk | Impact | Mitigation |
+|------|--------|------------|

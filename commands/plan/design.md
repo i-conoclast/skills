@@ -1,29 +1,29 @@
-# 설계
+# Design
 
-인터페이스, 데이터 구조, 아키텍처를 설계합니다.
+Designs interfaces, data structures, and architecture.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. 기존 코드 구조 파악 (explore 활용)
-2. 인터페이스 정의 (API, 클래스, 함수 시그니처)
-3. 데이터 모델 설계
-4. 모듈 간 의존성 설계
-5. 에러 처리 전략
+1. Understand existing code structure (using explore)
+2. Define interfaces (API, class, function signatures)
+3. Design data models
+4. Design inter-module dependencies
+5. Error handling strategy
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-- 기능 설명: "User Authentication"
-- 옵션 `--style <아키텍처>`: layered, hexagonal, clean 등
+- Feature description: "User Authentication"
+- Option `--style <architecture>`: layered, hexagonal, clean, etc.
 
-## 설계 원칙
+## Design Principles
 
-- SOLID 원칙 준수
-- 기존 패턴 따르기 (프로젝트 컨벤션)
-- 테스트 가능한 구조
-- 확장 가능한 인터페이스
+- Follow SOLID principles
+- Follow existing patterns (project conventions)
+- Testable structure
+- Extensible interfaces
 
-## 출력 형식
+## Output Format
 
-.claude/templates/plan/design.md 형식
+.claude/templates/plan/design.md format

@@ -1,24 +1,24 @@
-# Verify 출력 형식
+# Verify Output Format
 
-## 검증 결과
+## Verification Results
 
-| 단계 | 상태 | 상세 |
-|------|------|------|
-| 린트 | ✅/❌ | N개 이슈 |
-| 포맷 | ✅/❌ | N개 수정 |
-| 유닛 테스트 | ✅/❌ | N passed, M failed |
-| E2E 테스트 | ✅/❌ | N passed, M failed |
+| Step | Status | Details |
+|------|--------|---------|
+| Lint | ✅/❌ | N issues |
+| Format | ✅/❌ | N fixes |
+| Unit Tests | ✅/❌ | N passed, M failed |
+| E2E Tests | ✅/❌ | N passed, M failed |
 
-## 실패 상세 (실패 시)
+## Failure Details (on failure)
 
-### 린트 이슈
-| 파일 | 라인 | 규칙 | 설명 |
-|------|------|------|------|
+### Lint Issues
+| File | Line | Rule | Description |
+|------|------|------|-------------|
 
-### 테스트 실패
-| 테스트 | 에러 | 원인 |
-|--------|------|------|
+### Test Failures
+| Test | Error | Cause |
+|------|-------|-------|
 
-## 권장 후속 작업
+## Recommended Follow-up Actions
 
-- [ ] 수정 필요 항목
+- [ ] Items requiring fixes

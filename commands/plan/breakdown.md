@@ -1,29 +1,29 @@
-# 태스크 분해
+# Task Breakdown
 
-목표를 실행 가능한 작은 태스크로 분해합니다.
+Breaks down a goal into small, actionable tasks.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. 목표 분석 및 주요 단계 파악
-2. 각 단계를 독립적인 태스크로 분해
-3. 태스크 간 의존성 정의
-4. 우선순위 설정
-5. 실행 순서 결정
+1. Analyze the goal and identify key steps
+2. Break each step into independent tasks
+3. Define dependencies between tasks
+4. Set priorities
+5. Determine execution order
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-- 목표 설명: "Add batch processing API"
-- 옵션 `--from-spec <경로>`: 스펙 문서 기반 분해
+- Goal description: "Add batch processing API"
+- Option `--from-spec <path>`: Break down based on spec document
 
-## 분해 기준
+## Breakdown Criteria
 
-- 각 태스크는 30분~2시간 내 완료 가능
-- 명확한 입력/출력 정의
-- 독립적으로 테스트 가능
-- 의존성 최소화
+- Each task can be completed within 30 minutes to 2 hours
+- Clear input/output definitions
+- Independently testable
+- Minimize dependencies
 
-## 출력 형식
+## Output Format
 
-.claude/templates/plan/breakdown.md 형식
+.claude/templates/plan/breakdown.md format

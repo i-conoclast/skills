@@ -1,17 +1,17 @@
-# 테스트 시나리오 정의
+# Define Test Scenarios
 
-테스트 시나리오를 정의합니다.
+Defines test scenarios.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. 주요 사용 시나리오
-2. 예외 시나리오
-3. 테스트 케이스
+1. Key usage scenarios
+2. Exception scenarios
+3. Test cases
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-## 출력 형식
+## Output Format
 
-.claude/templates/spec/define-scenarios.md 형식
+.claude/templates/spec/define-scenarios.md format

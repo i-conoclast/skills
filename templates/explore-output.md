@@ -1,36 +1,36 @@
-# Explore 출력 형식
+# Explore Output Format
 
-## find-usage 출력
+## find-usage Output
 
-### `{대상}` 사용처
+### `{target}` Usage Locations
 
-| # | 파일 | 라인 | 컨텍스트 |
-|---|------|------|----------|
-| 1 | `src/...` | L42 | 호출/import/참조 설명 |
+| # | File | Line | Context |
+|---|------|------|---------|
+| 1 | `src/...` | L42 | Call/import/reference description |
 
-**요약**: 총 N개 파일, M개 위치에서 사용
+**Summary**: Used in N files, M locations total
 
 ---
 
-## find-deps 출력
+## find-deps Output
 
-### `{대상}` 의존성
+### `{target}` Dependencies
 
-**내부 의존성** (이 파일이 import하는 것):
-| 모듈 | 용도 |
-|------|------|
-| `src.models.user` | User 모델 |
+**Internal Dependencies** (imported by this file):
+| Module | Purpose |
+|--------|---------|
+| `src.models.user` | User model |
 
-**역방향 의존성** (이 파일을 import하는 것):
-| 모듈 | 용도 |
-|------|------|
-| `src.routers.auth` | 인증 처리 |
+**Reverse Dependencies** (files that import this file):
+| Module | Purpose |
+|--------|---------|
+| `src.routers.auth` | Authentication handling |
 
-**외부 패키지**:
-| 패키지 | 버전 | 용도 |
-|--------|------|------|
+**External Packages**:
+| Package | Version | Purpose |
+|---------|---------|---------|
 
-**의존성 그래프**:
+**Dependency Graph**:
 ```
 A -> B -> C
        -> D
@@ -38,94 +38,94 @@ A -> B -> C
 
 ---
 
-## find-impact 출력
+## find-impact Output
 
-### `{대상}` 변경 영향
+### `{target}` Change Impact
 
-**직접 영향** (1-depth):
-| 파일 | 영향 내용 |
-|------|----------|
+**Direct Impact** (1-depth):
+| File | Impact Description |
+|------|--------------------|
 
-**간접 영향** (2-depth):
-| 파일 | 경로 | 영향 내용 |
-|------|------|----------|
+**Indirect Impact** (2-depth):
+| File | Path | Impact Description |
+|------|------|--------------------|
 
-**관련 테스트**:
-| 테스트 파일 | 관련 테스트 수 |
-|------------|--------------|
+**Related Tests**:
+| Test File | Number of Related Tests |
+|-----------|------------------------|
 
-**위험도**: 🟢 낮음 / 🟡 중간 / 🔴 높음
-
----
-
-## find-related 출력
-
-### `{대상}` 관련 파일
-
-**소스 파일**: 같은 모듈/디렉토리 파일
-**테스트 파일**: 관련 테스트
-**문서 파일**: 관련 문서
+**Risk Level**: 🟢 Low / 🟡 Medium / 🔴 High
 
 ---
 
-## analyze-structure 출력
+## find-related Output
 
-### `{경로}` 구조 분석
+### `{target}` Related Files
 
-**파일 통계**:
-| 항목 | 값 |
-|------|---|
-| 파일 수 | N |
-| 총 줄 수 | N |
-| 평균 줄 수 | N |
+**Source Files**: Files in the same module/directory
+**Test Files**: Related tests
+**Documentation Files**: Related documentation
 
-**디렉토리 구조**:
+---
+
+## analyze-structure Output
+
+### `{path}` Structure Analysis
+
+**File Statistics**:
+| Item | Value |
+|------|-------|
+| Number of Files | N |
+| Total Lines | N |
+| Average Lines | N |
+
+**Directory Structure**:
 ```
 path/
-├── file1.py (N줄)
-├── file2.py (N줄)
+├── file1.py (N lines)
+├── file2.py (N lines)
 └── sub/
-    └── file3.py (N줄)
+    └── file3.py (N lines)
 ```
 
-**주요 클래스/함수**:
-| 이름 | 파일 | 줄 수 | 설명 |
-|------|------|-------|------|
+**Key Classes/Functions**:
+| Name | File | Lines | Description |
+|------|------|-------|-------------|
 
 ---
 
-## analyze-code 출력
+## analyze-code Output
 
-### `{대상}` 코드 분석
+### `{target}` Code Analysis
 
-**개요**: 파일/함수의 역할 한 줄 설명
+**Overview**: One-line description of the file/function's role
 
-**핵심 로직**:
-1. 단계 1 설명
-2. 단계 2 설명
+**Core Logic**:
+1. Step 1 description
+2. Step 2 description
 
-**의존성**: 주요 import 목록
-**특이사항**: 주의할 점
-
----
-
-## find-duplicates 출력
-
-### 중복 코드 탐지 결과
-
-| # | 파일 A | 파일 B | 유사도 | 줄 수 |
-|---|--------|--------|--------|-------|
-
-**추출 권장**:
-- 공통 로직 설명 -> 추출 위치 제안
+**Dependencies**: Key import list
+**Notable Points**: Points to be aware of
 
 ---
 
-## find-changes 출력
+## find-duplicates Output
 
-### 최근 변경 사항
+### Duplicate Code Detection Results
 
-| 파일 | 상태 | 변경 줄 수 | 주요 변경 |
-|------|------|-----------|----------|
+| # | File A | File B | Similarity | Lines |
+|---|--------|--------|------------|-------|
 
-**요약**: N개 파일 변경, +A/-B 줄
+**Extraction Recommended**:
+- Common logic description -> Suggested extraction location
+
+---
+
+## find-changes Output
+
+### Recent Changes
+
+| File | Status | Lines Changed | Key Changes |
+|------|--------|---------------|-------------|
+
+**Summary**: N files changed, +A/-B lines

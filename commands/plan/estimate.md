@@ -1,31 +1,31 @@
-# 영향 범위 및 위험도 평가
+# Impact Scope and Risk Assessment
 
-변경의 영향 범위를 분석하고 위험도를 평가합니다.
+Analyzes the scope of impact of changes and assesses risk.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. 변경 대상 파일 목록 작성
-2. 직접 영향 받는 모듈 파악 (explore:find-usage 활용)
-3. 간접 영향 받는 모듈 파악 (explore:find-deps 활용)
-4. 테스트 커버리지 확인
-5. 위험도 산정 (높음/중간/낮음)
-6. 리스크 완화 방안 제시
+1. Create a list of files to be changed
+2. Identify directly affected modules (using explore:find-usage)
+3. Identify indirectly affected modules (using explore:find-deps)
+4. Check test coverage
+5. Assess risk level (High/Medium/Low)
+6. Propose risk mitigation strategies
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-- 변경 대상: "src/services/auth.py"
-- 옵션 `--detailed`: 파일별 상세 분석
+- Change target: "src/services/auth.py"
+- Option `--detailed`: Detailed analysis per file
 
-## 위험도 기준
+## Risk Criteria
 
-| 위험도 | 조건 |
-|--------|------|
-| 높음 | 핵심 모듈, 테스트 없음, 많은 의존성 |
-| 중간 | 일반 모듈, 일부 테스트, 중간 의존성 |
-| 낮음 | 독립 모듈, 충분한 테스트, 의존성 적음 |
+| Risk Level | Conditions |
+|------------|------------|
+| High | Core module, no tests, many dependencies |
+| Medium | General module, some tests, moderate dependencies |
+| Low | Independent module, sufficient tests, few dependencies |
 
-## 출력 형식
+## Output Format
 
-.claude/templates/plan/estimate.md 형식
+.claude/templates/plan/estimate.md format

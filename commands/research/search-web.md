@@ -1,27 +1,27 @@
-# 웹 조사
+# Web Research
 
-특정 주제에 대해 웹 검색을 수행하고 결과를 요약합니다.
+Performs web searches on a specific topic and summarizes the results.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. 검색 키워드 도출
-2. WebSearch로 정보 수집
-3. 관련 문서/블로그/공식 문서 우선 순위
-4. 핵심 내용 요약
+1. Derive search keywords
+2. Collect information via WebSearch
+3. Prioritize related docs/blogs/official documentation
+4. Summarize key findings
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-- 주제: `"React best practices"`
-- 기술: `"Python async/await patterns"`
+- Topic: `"React best practices"`
+- Technology: `"Python async/await patterns"`
 
-## 주의사항
+## Important Notes
 
-- 공식 문서 우선 참조
-- 최신 정보 위주
-- 복수 출처 교차 검증
+- Prioritize official documentation
+- Focus on latest information
+- Cross-verify with multiple sources
 
-## 출력 형식
+## Output Format
 
-.claude/templates/research/search-web.md 형식
+.claude/templates/research/search-web.md format

@@ -1,29 +1,29 @@
-# 최근 변경 사항 추적
+# Track Recent Changes
 
-git diff를 기반으로 최근 변경된 파일과 내용을 분석합니다.
+Analyzes recently changed files and content based on git diff.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. git status로 변경 파일 목록
-2. git diff로 변경 내용 확인
-3. 변경 유형 분류 (추가/수정/삭제)
-4. 주요 변경 사항 요약
+1. List changed files with git status
+2. Check change details with git diff
+3. Classify change types (added/modified/deleted)
+4. Summarize key changes
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-- 범위: `HEAD` (기본값, unstaged changes)
-- 커밋: `HEAD~1..HEAD` (마지막 커밋)
-- 브랜치: `main..feature` (브랜치 간 차이)
-- 경로: `src/` (특정 경로만)
+- Range: `HEAD` (default, unstaged changes)
+- Commit: `HEAD~1..HEAD` (last commit)
+- Branch: `main..feature` (difference between branches)
+- Path: `src/` (specific path only)
 
-## 주의사항
+## Important Notes
 
-- Staged와 unstaged 구분
-- 바이너리 파일 제외
-- 큰 변경은 요약만 표시
+- Distinguish between staged and unstaged
+- Exclude binary files
+- Show only summary for large changes
 
-## 출력 형식
+## Output Format
 
-.claude/templates/explore/find-changes.md 형식
+.claude/templates/explore/find-changes.md format

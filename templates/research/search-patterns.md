@@ -1,6 +1,6 @@
-## 패턴 조사: `{주제}`
+## Pattern Research: `{topic}`
 
-| 패턴 | 적용 사례 | 장점 | 단점 |
-|------|----------|------|------|
+| Pattern | Use Cases | Pros | Cons |
+|---------|-----------|------|------|
 
-**추천**: 프로젝트에 적합한 패턴
+**Recommendation**: Pattern suitable for the project

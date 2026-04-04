@@ -1,27 +1,27 @@
-# 라이브러리 검색 및 비교
+# Library Search and Comparison
 
-특정 목적에 맞는 라이브러리를 검색하고 비교합니다.
+Searches for and compares libraries suited for a specific purpose.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. 주제/목적 분석
-2. 관련 라이브러리 검색
-3. 인기도/활성도/성능 비교
-4. 장단점 분석 및 추천
+1. Analyze topic/purpose
+2. Search for related libraries
+3. Compare popularity/activity/performance
+4. Analyze pros/cons and make recommendations
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-- 목적: `"Python async HTTP client"`
-- 대안: `"pandas alternative for large data"`
+- Purpose: `"Python async HTTP client"`
+- Alternative: `"pandas alternative for large data"`
 
-## 주의사항
+## Important Notes
 
-- GitHub stars, 최근 업데이트 확인
-- 라이선스 검토
-- 의존성 및 호환성 체크
+- Check GitHub stars and recent updates
+- Review licenses
+- Check dependencies and compatibility
 
-## 출력 형식
+## Output Format
 
-.claude/templates/research/search-libs.md 형식
+.claude/templates/research/search-libs.md format

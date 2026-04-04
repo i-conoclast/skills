@@ -1,48 +1,48 @@
 ---
 name: structure-check-checklist
-description: 구조 품질 평가 기준 및 메트릭
+description: Structure quality evaluation criteria and metrics
 ---
 
-# 품질 평가 기준
+# Quality Evaluation Criteria
 
-## 메트릭 임계값
+## Metric Thresholds
 
-| 메트릭 | 경고 🟡 | 심각 🔴 |
-|--------|---------|---------|
-| 파일 줄 수 | > 200 | > 300 |
-| 순환 복잡도 | > 10 | > 15 |
-| 함수 줄 수 | > 30 | > 50 |
-| 파라미터 수 | > 3 | > 5 |
-| 순환 의존성 | 감지 | - |
-| 코드 중복도 | > 80% | - |
+| Metric | Warning 🟡 | Critical 🔴 |
+|--------|-----------|-------------|
+| File line count | > 200 | > 300 |
+| Cyclomatic complexity | > 10 | > 15 |
+| Function line count | > 30 | > 50 |
+| Parameter count | > 3 | > 5 |
+| Circular dependencies | Detected | - |
+| Code duplication | > 80% | - |
 
-## 점검 커맨드
+## Inspection Commands
 
-1. `explore:analyze-structure` - 파일 통계 및 구조
-2. `explore:find-duplicates` - 중복 코드
-3. `explore:find-deps` - 의존성 그래프
+1. `explore:analyze-structure` - File statistics and structure
+2. `explore:find-duplicates` - Duplicate code
+3. `explore:find-deps` - Dependency graph
 
-## 심각도 분류
+## Severity Classification
 
 ### 🔴 Critical
-- 순환 의존성
-- 300줄 초과 파일
-- 순환 복잡도 15 초과
+- Circular dependencies
+- Files exceeding 300 lines
+- Cyclomatic complexity exceeding 15
 
 ### 🟡 Warning
-- 200~300줄 파일
-- 순환 복잡도 10~15
-- 80% 이상 유사 코드
+- Files with 200-300 lines
+- Cyclomatic complexity 10-15
+- 80%+ similar code
 
 ### 🔵 Info
-- 빈 __init__.py
-- 미사용 import
-- 명명 규칙 불일치
+- Empty __init__.py
+- Unused imports
+- Naming convention inconsistencies
 
-## 권장 점검 주기
+## Recommended Inspection Frequency
 
-| 시점 | 범위 |
-|------|------|
-| 기능 추가 후 | 변경된 디렉토리 |
-| PR 전 | 변경된 파일 전체 |
-| 주간 | 전체 프로젝트 |
+| Timing | Scope |
+|--------|-------|
+| After adding features | Changed directories |
+| Before PR | All changed files |
+| Weekly | Entire project |

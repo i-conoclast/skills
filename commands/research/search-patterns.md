@@ -1,26 +1,26 @@
-# 디자인 패턴/아키텍처 패턴 조사
+# Design Pattern / Architecture Pattern Research
 
-특정 문제에 적합한 디자인 패턴이나 아키텍처 패턴을 조사합니다.
+Researches design patterns or architecture patterns suitable for a specific problem.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. 문제/요구사항 분석
-2. 관련 패턴 검색
-3. 패턴 설명 및 적용 사례
-4. 장단점 및 적용 가이드
+1. Analyze problem/requirements
+2. Search for related patterns
+3. Pattern descriptions and use cases
+4. Pros/cons and application guide
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-- 문제: `"Observer pattern in Python"`
-- 아키텍처: `"Microservices communication patterns"`
+- Problem: `"Observer pattern in Python"`
+- Architecture: `"Microservices communication patterns"`
 
-## 주의사항
+## Important Notes
 
-- GoF 디자인 패턴 우선 참조
-- 실제 코드 예시 포함
+- Prioritize GoF design patterns
+- Include actual code examples
 
-## 출력 형식
+## Output Format
 
-.claude/templates/research/search-patterns.md 형식
+.claude/templates/research/search-patterns.md format

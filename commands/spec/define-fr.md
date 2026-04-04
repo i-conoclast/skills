@@ -1,21 +1,21 @@
-# 기능 요구사항 정의
+# Define Functional Requirements
 
-기능 요구사항(Functional Requirements)을 정의하고 문서화합니다.
+Defines and documents Functional Requirements.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. 기능 목적 및 범위 파악
-2. 주요 기능 목록 작성
-3. 각 기능별 상세 요구사항 정의
-4. docs/specs/ 폴더에 저장
+1. Identify feature purpose and scope
+2. Create a list of key features
+3. Define detailed requirements for each feature
+4. Save to docs/specs/ folder
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-- 기능 설명: `"Multi-tenant support"`
+- Feature description: `"Multi-tenant support"`
 
-## 출력 형식
+## Output Format
 
-.claude/templates/spec/define-fr.md 형식
-docs/specs/{feature-name}_fr.md로 저장
+.claude/templates/spec/define-fr.md format
+Save as docs/specs/{feature-name}_fr.md

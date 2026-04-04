@@ -1,32 +1,32 @@
-# Structure Check 출력 형식
+# Structure Check Output Format
 
-## 점검 대상: `{범위}`
+## Check Target: `{scope}`
 
 ## Critical 🔴
 
-| # | 카테고리 | 대상 | 설명 | 값 |
-|---|---------|------|------|---|
+| # | Category | Target | Description | Value |
+|---|----------|--------|-------------|-------|
 
 ## Warning 🟡
 
-| # | 카테고리 | 대상 | 설명 | 값 |
-|---|---------|------|------|---|
+| # | Category | Target | Description | Value |
+|---|----------|--------|-------------|-------|
 
 ## Info 🔵
 
-- 참고 사항 목록
+- Reference notes list
 
-## 요약
+## Summary
 
-| 카테고리 | 🔴 | 🟡 | 🔵 |
-|---------|---|---|---|
-| 파일 크기 | N | N | N |
-| 함수 복잡도 | N | N | N |
-| 순환 의존성 | N | N | N |
-| 코드 중복 | N | N | N |
-| 단일 책임 | N | N | N |
+| Category | 🔴 | 🟡 | 🔵 |
+|----------|---|---|---|
+| File Size | N | N | N |
+| Function Complexity | N | N | N |
+| Circular Dependencies | N | N | N |
+| Code Duplication | N | N | N |
+| Single Responsibility | N | N | N |
 
-## 개선 우선순위
+## Improvement Priority
 
-1. 가장 시급한 항목
-2. 다음 우선순위
+1. Most urgent item
+2. Next priority

@@ -1,28 +1,28 @@
-# 옵션 비교
+# Option Comparison
 
-두 가지 이상의 옵션을 비교 분석합니다.
+Compares and analyzes two or more options.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. 비교 대상 파악
-2. 비교 기준 설정
-3. 각 옵션별 평가
-4. 비교표 생성 및 추천
+1. Identify comparison targets
+2. Set comparison criteria
+3. Evaluate each option
+4. Generate comparison table and recommendation
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-- 비교: `"FastAPI vs Flask"`
-- 선택: `"Redis vs Memcached"`
-- 대안: `"REST vs GraphQL"`
+- Compare: `"FastAPI vs Flask"`
+- Choose: `"Redis vs Memcached"`
+- Alternative: `"REST vs GraphQL"`
 
-## 주의사항
+## Important Notes
 
-- 객관적 데이터 기반 (벤치마크, 통계)
-- 프로젝트 맥락 고려
-- 각 옵션의 최신 버전 기준
+- Based on objective data (benchmarks, statistics)
+- Consider project context
+- Based on the latest version of each option
 
-## 출력 형식
+## Output Format
 
-.claude/templates/research/compare.md 형식
+.claude/templates/research/compare.md format

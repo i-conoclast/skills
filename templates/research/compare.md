@@ -1,6 +1,6 @@
-## 비교: `{주제}`
+## Comparison: `{topic}`
 
-| 기준 | 옵션 A | 옵션 B |
-|------|--------|--------|
+| Criteria | Option A | Option B |
+|----------|----------|----------|
 
-**추천**: 추천 및 이유
+**Recommendation**: Recommendation and reasoning

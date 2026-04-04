@@ -1,6 +1,6 @@
-## 중복 코드 탐지
+## Duplicate Code Detection
 
-| 파일 A | 파일 B | 유사도 | 줄 수 |
-|--------|--------|--------|-------|
+| File A | File B | Similarity | Lines |
+|--------|--------|------------|-------|
 
-**추출 권장**: 공통 로직 설명
+**Extraction Recommended**: Common logic description

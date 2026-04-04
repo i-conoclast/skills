@@ -1,44 +1,44 @@
 ---
 name: feature-patterns
-description: 기능 유형별 개발 패턴
+description: Development patterns by feature type
 ---
 
-# 기능 유형별 패턴
+# Patterns by Feature Type
 
-## API Endpoint 추가
+## Adding API Endpoints
 
-**탐색**: 기존 라우터 구조 파악
-**계획**: 라우터 + 서비스 + 모델 설계
-**구현**:
-1. 데이터 모델 생성 (request/response)
-2. 서비스 로직 구현
-3. 라우터 엔드포인트 추가
-4. 테스트 작성
+**Explore**: Understand existing router structure
+**Plan**: Design router + service + model
+**Implement**:
+1. Create data models (request/response)
+2. Implement service logic
+3. Add router endpoints
+4. Write tests
 
-## 서비스 레이어 추가
+## Adding Service Layer
 
-**탐색**: 기존 서비스 패턴 분석
-**계획**: 인터페이스 + 의존성 설계
-**구현**:
-1. 서비스 인터페이스 정의
-2. 구현체 작성
-3. DI 등록 (필요시)
-4. 테스트 작성
+**Explore**: Analyze existing service patterns
+**Plan**: Design interface + dependencies
+**Implement**:
+1. Define service interface
+2. Write implementation
+3. Register DI (if needed)
+4. Write tests
 
-## UI 컴포넌트 추가
+## Adding UI Components
 
-**탐색**: 기존 컴포넌트 패턴 분석
-**계획**: 컴포넌트 계층 + 상태 관리 설계
-**구현**:
-1. 컴포넌트 파일 생성
-2. 스타일 작성
-3. 상태 관리 연결
-4. 테스트 작성
+**Explore**: Analyze existing component patterns
+**Plan**: Design component hierarchy + state management
+**Implement**:
+1. Create component files
+2. Write styles
+3. Connect state management
+4. Write tests
 
-## 공통 체크리스트
+## Common Checklist
 
-- [ ] 기존 패턴/컨벤션 준수
-- [ ] 타입 힌트/타입 정의 추가
-- [ ] 에러 처리 구현
-- [ ] 유닛 테스트 작성
-- [ ] 문서 업데이트
+- [ ] Follow existing patterns/conventions
+- [ ] Add type hints/type definitions
+- [ ] Implement error handling
+- [ ] Write unit tests
+- [ ] Update documentation

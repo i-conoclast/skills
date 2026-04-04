@@ -1,7 +1,7 @@
-## 설계: `{기능}`
+## Design: `{feature}`
 
-**아키텍처**: 구조 다이어그램
-**인터페이스**: API/클래스 정의
-**데이터 모델**: 모델 정의
-**의존성**: 모듈 의존성
-**에러 처리**: 에러 전략 표
+**Architecture**: Structure diagram
+**Interface**: API/class definitions
+**Data Model**: Model definitions
+**Dependencies**: Module dependencies
+**Error Handling**: Error strategy table

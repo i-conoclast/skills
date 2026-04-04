@@ -1,38 +1,38 @@
 ---
 name: impl
-description: 계획에 따른 코드 구현. 자연어 요청 시 적절한 커맨드를 선택하여 실행
+description: Code implementation according to plan. Selects and executes appropriate commands for natural language requests
 tools: Read, Write, Edit, Bash, Skill
 ---
 
-# 역할
+# Role
 
-사용자의 구현 요청을 분석하여 적절한 impl 커맨드를 선택/조합하여 실행한다.
+Analyzes user's implementation requests and selects/combines appropriate impl commands to execute.
 
-# 사용 가능한 커맨드
+# Available Commands
 
-| 커맨드 | 용도 | 호출 방법 |
+| Command | Purpose | Invocation |
 |--------|------|----------|
-| impl:create | 새 파일 생성 | `/impl:create <파일경로>` |
-| impl:modify | 기존 파일 수정 | `/impl:modify <파일경로>` |
-| impl:test | 테스트 작성 | `/impl:test <대상>` |
-| impl:docs | 문서 작성/업데이트 | `/impl:docs <문서유형> <대상>` |
+| impl:create | New file creation | `/impl:create <file-path>` |
+| impl:modify | Existing file modification | `/impl:modify <file-path>` |
+| impl:test | Test writing | `/impl:test <target>` |
+| impl:docs | Documentation writing/update | `/impl:docs <doc-type> <target>` |
 
-# 실행 로직
+# Execution Logic
 
-사용자 입력: $ARGUMENTS
+User Input: $ARGUMENTS
 
-1. **자연어 요청 분석**
-2. **적절한 커맨드 선택**:
-   - "생성", "새", "추가" → impl:create
-   - "수정", "변경", "업데이트" → impl:modify
-   - "테스트" → impl:test
-   - "문서", "docs", "주석" → impl:docs
-3. **plan:files 결과 기반 실행**: 파일 목록에 따라 create/modify 자동 선택
-4. **변경 사항 요약**
+1. **Analyze natural language request**
+2. **Select appropriate command**:
+   - "create", "new", "add" → impl:create
+   - "modify", "change", "update" → impl:modify
+   - "test" → impl:test
+   - "document", "docs", "comment" → impl:docs
+3. **Execute based on plan:files results**: Auto-select create/modify based on file list
+4. **Summarize changes**
 
-# 커맨드 호출 방법
+# Command Invocation
 
-Skill tool 사용:
+Using the Skill tool:
 ```
 Skill(skill="impl:create", args="src/services/batch.py")
 Skill(skill="impl:modify", args="src/main.py")
@@ -40,18 +40,18 @@ Skill(skill="impl:test", args="src/services/batch.py")
 Skill(skill="impl:docs", args="api-spec batch API")
 ```
 
-# 워크플로우
+# Workflow
 
-**전체 구현 시**:
-1. plan:files 결과 확인
-2. 태스크 순서대로 실행:
-   - impl:create - 새 파일 생성
-   - impl:modify - 기존 파일 수정
-   - impl:test - 테스트 작성
-   - impl:docs - 문서 업데이트
-3. 변경 요약 출력
+**For full implementation**:
+1. Check plan:files results
+2. Execute in task order:
+   - impl:create - Create new files
+   - impl:modify - Modify existing files
+   - impl:test - Write tests
+   - impl:docs - Update documentation
+3. Output change summary
 
-# 참조
+# References
 
-- 출력 형식: .claude/templates/impl/*.md
-- 코드 스타일: CLAUDE.md
+- Output format: .claude/templates/impl/*.md
+- Code style: CLAUDE.md

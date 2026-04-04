@@ -1,29 +1,29 @@
-# 변경/생성 파일 목록
+# Changed/Created File List
 
-구현에 필요한 파일 목록을 작성합니다.
+Creates a list of files needed for implementation.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. 기능 분석 (breakdown 결과 활용)
-2. 설계 확인 (design 결과 활용)
-3. 생성할 파일 목록 작성
-4. 수정할 파일 목록 작성
-5. 삭제할 파일 목록 작성 (필요시)
-6. 각 파일의 역할 및 주요 내용 요약
+1. Analyze features (using breakdown results)
+2. Review design (using design results)
+3. Create list of files to generate
+4. Create list of files to modify
+5. Create list of files to delete (if needed)
+6. Summarize the role and key content of each file
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-- 기능명: "Batch Processing API"
-- 옵션 `--with-tests`: 테스트 파일 포함
+- Feature name: "Batch Processing API"
+- Option `--with-tests`: Include test files
 
-## 파일 분류
+## File Classification
 
-- **신규 생성**: 완전히 새로운 파일
-- **수정**: 기존 파일에 코드 추가/변경
-- **삭제**: 더 이상 필요 없는 파일 (리팩토링 시)
+- **New**: Completely new files
+- **Modify**: Add/change code in existing files
+- **Delete**: Files no longer needed (during refactoring)
 
-## 출력 형식
+## Output Format
 
-.claude/templates/plan/files.md 형식
+.claude/templates/plan/files.md format

@@ -1,7 +1,7 @@
-## 비기능 요구사항: `{기능}`
+## Non-Functional Requirements: `{feature}`
 
-| 항목 | 요구사항 | 측정 기준 |
-|------|---------|----------|
-| 성능 | | |
-| 보안 | | |
-| 확장성 | | |
+| Item | Requirement | Measurement Criteria |
+|------|-------------|----------------------|
+| Performance | | |
+| Security | | |
+| Extensibility | | |

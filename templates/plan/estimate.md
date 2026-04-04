@@ -1,9 +1,9 @@
-## 위험도 평가: `{대상}`
+## Risk Assessment: `{target}`
 
-**직접 영향**: N개 파일
-**간접 영향**: N개 파일
-**테스트 커버리지**: N%
-**종합 위험도**: 🟢/🟡/🔴
+**Direct Impact**: N files
+**Indirect Impact**: N files
+**Test Coverage**: N%
+**Overall Risk Level**: 🟢/🟡/🔴
 
-| 위험 | 완화 방안 |
-|------|----------|
+| Risk | Mitigation |
+|------|------------|

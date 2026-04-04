@@ -1,4 +1,4 @@
-## 성공 기준: `{기능}`
+## Success Criteria: `{feature}`
 
-- [ ] 기준 1
-- [ ] 기준 2
+- [ ] Criterion 1
+- [ ] Criterion 2

@@ -1,12 +1,12 @@
-## 웹 조사: `{주제}`
+## Web Research: `{topic}`
 
-**요약**: 핵심 발견 1-2문장
+**Summary**: Key findings in 1-2 sentences
 
-**주요 발견**:
-1. 발견 사항 (출처)
+**Key Findings**:
+1. Finding (source)
 
-**베스트 프랙티스**:
-- 항목
+**Best Practices**:
+- Item
 
-**참고 자료**:
-- [출처](url)
+**References**:
+- [Source](url)

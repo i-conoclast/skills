@@ -1,20 +1,20 @@
-# E2E 테스트 실행
+# Run E2E Tests
 
-전체 흐름을 검증하는 E2E 테스트를 실행합니다.
+Runs E2E tests that verify the full flow.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. 테스트 모드 확인
-2. 해당 E2E 테스트 실행
-3. 실패 시 로그 분석 및 원인 파악
+1. Check test mode
+2. Run the relevant E2E tests
+3. On failure, analyze logs and identify the cause
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-- `all` 또는 인자 없음: 전체 E2E
-- 특정 테스트 파일: 해당 파일만 실행
+- `all` or no arguments: Full E2E
+- Specific test file: Run only that file
 
-## 출력 형식
+## Output Format
 
-.claude/templates/verify/test-e2e.md 형식
+.claude/templates/verify/test-e2e.md format

@@ -1,5 +1,5 @@
-## 기능 요구사항: `{기능}`
+## Functional Requirements: `{feature}`
 
-| ID | 요구사항 | 우선순위 | 완료 조건 |
-|----|---------|---------|----------|
+| ID | Requirement | Priority | Completion Criteria |
+|----|-------------|----------|---------------------|
 | FR-1 | | P0/P1/P2 | |

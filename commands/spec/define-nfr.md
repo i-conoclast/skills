@@ -1,19 +1,19 @@
-# 비기능 요구사항 정의
+# Define Non-Functional Requirements
 
-비기능 요구사항(Non-Functional Requirements)을 정의합니다.
-성능, 보안, 확장성 등을 명시합니다.
+Defines Non-Functional Requirements.
+Specifies performance, security, scalability, etc.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. 성능 요구사항
-2. 보안 요구사항
-3. 확장성/유지보수성
-4. docs/specs/ 저장
+1. Performance requirements
+2. Security requirements
+3. Scalability/maintainability
+4. Save to docs/specs/
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-## 출력 형식
+## Output Format
 
-.claude/templates/spec/define-nfr.md 형식
+.claude/templates/spec/define-nfr.md format

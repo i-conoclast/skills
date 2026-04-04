@@ -1,28 +1,28 @@
-# 함수/클래스 사용처 검색
+# Find Function/Class Usage
 
-코드베이스 내에서 특정 함수나 클래스가 어디서 사용되는지 검색합니다.
+Searches where a specific function or class is used within the codebase.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. 대상의 import 문 검색 (Grep)
-2. 실제 호출 위치 검색 (Grep)
-3. 결과를 표 형식으로 정리
-4. 사용 패턴 요약
+1. Search for import statements of the target (Grep)
+2. Search for actual call locations (Grep)
+3. Organize results in table format
+4. Summarize usage patterns
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-- 함수명: `UserService` (클래스/함수명)
-- 파일 경로: `src/services/user_service.py` (전체 경로)
-- 패턴: `UserService.*create` (정규표현식)
+- Function name: `UserService` (class/function name)
+- File path: `src/services/user_service.py` (full path)
+- Pattern: `UserService.*create` (regex)
 
-## 주의사항
+## Important Notes
 
-- 대소문자 구분함
-- 주석 내 언급은 제외
-- 테스트 파일 포함
+- Case sensitive
+- Exclude mentions in comments
+- Include test files
 
-## 출력 형식
+## Output Format
 
-.claude/templates/explore/find-usage.md 형식
+.claude/templates/explore/find-usage.md format

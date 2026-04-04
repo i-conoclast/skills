@@ -1,37 +1,37 @@
-# Spec 출력 형식
+# Spec Output Format
 
-## 개요
+## Overview
 
-- **목적**: 기능 설명
-- **배경**: 필요성
+- **Purpose**: Feature description
+- **Background**: Necessity
 
-## 기능 요구사항 (FR)
+## Functional Requirements (FR)
 
-- [ ] FR-1: 설명
-- [ ] FR-2: 설명
+- [ ] FR-1: Description
+- [ ] FR-2: Description
 
-## 비기능 요구사항 (NFR)
+## Non-Functional Requirements (NFR)
 
-| 항목 | 요구사항 | 측정 기준 |
-|------|---------|----------|
-| 성능 | | |
-| 보안 | | |
+| Item | Requirement | Measurement Criteria |
+|------|-------------|----------------------|
+| Performance | | |
+| Security | | |
 
-## 제약 조건
+## Constraints
 
-- 기술적 제약
-- 비즈니스 제약
+- Technical constraints
+- Business constraints
 
-## 성공 기준
+## Success Criteria
 
-- [ ] 기준 1
-- [ ] 기준 2
+- [ ] Criterion 1
+- [ ] Criterion 2
 
-## 테스트 시나리오
+## Test Scenarios
 
-| # | 시나리오 | 입력 | 기대 결과 |
-|---|---------|------|----------|
+| # | Scenario | Input | Expected Result |
+|---|----------|-------|-----------------|
 
-## 미결 사항
+## Open Items
 
-- 추가 논의 필요한 항목
+- Items requiring further discussion

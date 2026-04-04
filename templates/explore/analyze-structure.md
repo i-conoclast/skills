@@ -1,5 +1,5 @@
-## `{경로}` 구조
+## `{path}` Structure
 
-**통계**: 파일 수, 줄 수
-**구조**: 디렉토리 트리
-**주요 컴포넌트**: 클래스/함수 목록
+**Statistics**: Number of files, lines
+**Structure**: Directory tree
+**Key Components**: Class/function list

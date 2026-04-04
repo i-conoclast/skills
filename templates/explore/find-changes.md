@@ -1,6 +1,6 @@
-## 최근 변경
+## Recent Changes
 
-| 파일 | 상태 | 변경 줄 수 |
-|------|------|-----------|
+| File | Status | Lines Changed |
+|------|--------|---------------|
 
-**요약**: N개 파일, +A/-B 줄
+**Summary**: N files, +A/-B lines

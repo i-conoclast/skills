@@ -1,7 +1,7 @@
-## 구현 요약
+## Implementation Summary
 
-| # | 작업 | 파일 | 상태 |
-|---|------|------|------|
-| 1 | 생성/수정 | 파일경로 | ✅/🔄 |
+| # | Task | File | Status |
+|---|------|------|--------|
+| 1 | Created/Modified | File path | ✅/🔄 |
 
-**변경 통계**: N개 파일 생성, M개 파일 수정
+**Change Statistics**: N files created, M files modified

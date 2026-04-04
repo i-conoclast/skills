@@ -1,31 +1,31 @@
-# 기존 파일 수정
+# Modify Existing File
 
-기존 파일에 코드를 추가하거나 수정합니다.
+Adds or modifies code in an existing file.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. 대상 파일 읽기 (Read)
-2. 수정 위치 파악
-3. 기존 패턴 분석 (explore:analyze-code 활용)
-4. 코드 수정 (Edit)
-5. import 문 업데이트 (필요시)
-6. 변경 사항 요약
+1. Read the target file (Read)
+2. Identify modification location
+3. Analyze existing patterns (using explore:analyze-code)
+4. Modify code (Edit)
+5. Update import statements (if needed)
+6. Summarize changes
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-- 파일 경로: "src/main.py"
-- 수정 내용: "새 라우터 추가"
-- 옵션 `--at <위치>`: 특정 라인/함수에 추가
+- File path: "src/main.py"
+- Modification: "Add new router"
+- Option `--at <location>`: Add at a specific line/function
 
-## 수정 규칙
+## Modification Rules
 
-- 기존 스타일 유지
-- 최소 변경 원칙
-- 관련 import는 파일 상단에 추가
-- 변경 이유 주석 (필요시)
+- Maintain existing style
+- Principle of minimal changes
+- Add related imports at the top of the file
+- Comment on reason for change (if needed)
 
-## 출력 형식
+## Output Format
 
-.claude/templates/impl/modify.md 형식
+.claude/templates/impl/modify.md format

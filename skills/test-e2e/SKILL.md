@@ -1,49 +1,49 @@
 ---
 name: test-e2e
-description: E2E 테스트 실행 및 실패 분석 워크플로우
+description: E2E test execution and failure analysis workflow
 ---
 
-# E2E 테스트 워크플로우
+# E2E Test Workflow
 
-## 사용법
+## Usage
 
 ```
 /test-e2e
-/test-e2e <특정 테스트>
+/test-e2e <specific test>
 ```
 
-## 실행 단계
+## Execution Steps
 
-### Phase 1: 테스트 실행
+### Phase 1: Test Execution
 ```bash
 pytest -m e2e -x --tb=long -v
 ```
 
-### Phase 2: 결과 확인
-- 전체 통과 → 성공 리포트
-- 실패 → Phase 3으로
+### Phase 2: Check Results
+- All passed → Success report
+- Failure → Proceed to Phase 3
 
-### Phase 3: 실패 분석
-- explore Agent로 실패 코드 분석
-- 에러 패턴 분류
-- git diff와 대조하여 원인 추적
+### Phase 3: Failure Analysis
+- Analyze failed code with explore Agent
+- Classify error patterns
+- Trace cause by cross-referencing with git diff
 
-### Phase 4: 에러 분류
+### Phase 4: Error Classification
 
-| 분류 | 원인 | 조치 |
-|------|------|------|
-| 코드 버그 | 변경된 코드의 로직 오류 | 코드 수정 |
-| 테스트 불일치 | 인터페이스 변경 | 테스트 업데이트 |
-| 환경 문제 | 설정/의존성 | 환경 수정 |
-| 비결정적 | 타이밍/외부 의존 | 재시도 또는 격리 |
+| Classification | Cause | Action |
+|----------------|-------|--------|
+| Code bug | Logic error in changed code | Fix code |
+| Test mismatch | Interface change | Update tests |
+| Environment issue | Configuration/dependencies | Fix environment |
+| Non-deterministic | Timing/external dependency | Retry or isolate |
 
-### Phase 5: 디버그 사이클 (최대 3회)
-1. plan → 수정 계획
-2. impl → 코드 수정
-3. 재실행 → 결과 확인
-4. 3회 초과 시 사용자에게 보고
+### Phase 5: Debug Cycle (up to 3 times)
+1. plan → Fix plan
+2. impl → Fix code
+3. Re-run → Check results
+4. Report to user if exceeding 3 attempts
 
-### Phase 6: 리포트
-- 실행 결과 요약
-- 실패/수정 내역
-- 증거 (로그, 에러 메시지)
+### Phase 6: Report
+- Execution results summary
+- Failure/fix history
+- Evidence (logs, error messages)

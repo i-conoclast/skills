@@ -1,65 +1,65 @@
 ---
 name: new-feature
-description: 새 기능 추가 전체 워크플로우. explore → spec → research → plan → impl → verify
+description: Full workflow for adding new features. explore → spec → research → plan → impl → verify
 ---
 
-# 새 기능 추가 워크플로우
+# New Feature Addition Workflow
 
-## 사용법
+## Usage
 
 ```
-/new-feature <기능 설명>
-/new-feature <기능 설명> --with-spec
-/new-feature <기능 설명> --with-research
-/new-feature <기능 설명> --full
+/new-feature <feature description>
+/new-feature <feature description> --with-spec
+/new-feature <feature description> --with-research
+/new-feature <feature description> --full
 ```
 
-## 실행 단계
+## Execution Steps
 
-### Step 1: 탐색 (explore)
-- explore Agent 스폰:
-  - `explore:analyze-structure` - 관련 디렉토리 구조 파악
-  - `explore:find-related` - 유사 기능/파일 탐색
-  - `explore:analyze-code` - 기존 패턴 분석
+### Step 1: Explore
+- Spawn explore Agent:
+  - `explore:analyze-structure` - Understand related directory structure
+  - `explore:find-related` - Search for similar features/files
+  - `explore:analyze-code` - Analyze existing patterns
 
-### Step 2: 요구사항 정의 (spec) [--with-spec, --full]
-- spec Agent 스폰:
-  - `spec:define-fr` - 기능 요구사항
-  - `spec:define-criteria` - 성공 기준
-  - `spec:define-scenarios` - 테스트 시나리오
-- **승인 게이트**: 사용자 확인 후 진행
+### Step 2: Requirements Definition (spec) [--with-spec, --full]
+- Spawn spec Agent:
+  - `spec:define-fr` - Functional requirements
+  - `spec:define-criteria` - Success criteria
+  - `spec:define-scenarios` - Test scenarios
+- **Approval gate**: Proceed after user confirmation
 
-### Step 3: 조사 (research) [--with-research, --full]
-- research Agent 스폰:
-  - `research:search-libs` - 관련 라이브러리
-  - `research:search-patterns` - 적용 가능한 패턴
-  - `research:compare` - 옵션 비교 (필요시)
+### Step 3: Research [--with-research, --full]
+- Spawn research Agent:
+  - `research:search-libs` - Related libraries
+  - `research:search-patterns` - Applicable patterns
+  - `research:compare` - Compare options (if needed)
 
-### Step 4: 계획 (plan)
-- plan Agent 스폰:
-  - `plan:design` - 설계
-  - `plan:breakdown` - 태스크 분해
-  - `plan:estimate` - 위험도 평가
-  - `plan:files` - 파일 목록
-- **승인 게이트**: 사용자 확인 후 진행
+### Step 4: Plan
+- Spawn plan Agent:
+  - `plan:design` - Design
+  - `plan:breakdown` - Task decomposition
+  - `plan:estimate` - Risk assessment
+  - `plan:files` - File list
+- **Approval gate**: Proceed after user confirmation
 
-### Step 5: 구현 (impl)
-- impl Agent 스폰:
-  - `impl:create` / `impl:modify` - 코드 구현
-  - `impl:test` - 테스트 작성
+### Step 5: Implement (impl)
+- Spawn impl Agent:
+  - `impl:create` / `impl:modify` - Code implementation
+  - `impl:test` - Write tests
 
-### Step 6: 검증 (verify)
-- verify Agent 스폰:
+### Step 6: Verify
+- Spawn verify Agent:
   - lint + unit test + e2e test
 
-### Step 7: 리포트 저장
+### Step 7: Save Report
 - `docs/reports/new-feature/{feature}_{YYYY-MM-DD}.md`
 
-## 실행 모드
+## Execution Modes
 
-| 모드 | 단계 | 트리거 |
-|------|------|--------|
-| basic | explore → plan → impl → verify | 기본 |
-| --with-spec | + spec | 요구사항 정의 필요 시 |
-| --with-research | + research | 기술 조사 필요 시 |
-| --full | 전체 7단계 | 복잡한 기능 |
+| Mode | Steps | Trigger |
+|------|-------|---------|
+| basic | explore → plan → impl → verify | Default |
+| --with-spec | + spec | When requirements definition is needed |
+| --with-research | + research | When technical research is needed |
+| --full | All 7 steps | Complex features |

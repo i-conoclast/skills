@@ -1,29 +1,29 @@
-# 중복 코드 탐지
+# Detect Duplicate Code
 
-코드베이스 내에서 중복되거나 유사한 코드를 찾습니다.
+Finds duplicate or similar code within the codebase.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. 파일 목록 수집
-2. 유사 코드 패턴 검색 (함수명, 구조)
-3. 중복도 계산 (간단한 휴리스틱)
-4. 추출 가능한 공통 로직 제안
+1. Collect file list
+2. Search for similar code patterns (function names, structures)
+3. Calculate duplication level (simple heuristics)
+4. Suggest extractable common logic
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-- 디렉토리: `src/services/`
-- 파일 패턴: `*.py` 또는 `*.ts`
-- 최소 줄 수: `10` (기본값)
+- Directory: `src/services/`
+- File pattern: `*.py` or `*.ts`
+- Minimum lines: `10` (default)
 
-## 주의사항
+## Important Notes
 
-- 단순 반복문/조건문은 제외
-- import 문은 무시
-- 주석은 비교에서 제외
-- 유사도 임계값: 80% 이상
+- Exclude simple loops/conditionals
+- Ignore import statements
+- Exclude comments from comparison
+- Similarity threshold: 80% or above
 
-## 출력 형식
+## Output Format
 
-.claude/templates/explore/find-duplicates.md 형식
+.claude/templates/explore/find-duplicates.md format

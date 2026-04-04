@@ -1,5 +1,5 @@
-## `{대상}` 의존성
+## `{target}` Dependencies
 
-**내부**: import하는 모듈 목록
-**역방향**: 이 모듈을 import하는 곳
-**외부 패키지**: 3rd-party 목록
+**Internal**: List of imported modules
+**Reverse**: Places that import this module
+**External Packages**: 3rd-party list

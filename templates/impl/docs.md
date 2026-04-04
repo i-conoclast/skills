@@ -1,5 +1,5 @@
-## 문서: `{대상}`
+## Documentation: `{target}`
 
-**유형**: API/설계/가이드
-**파일**: `docs/{path}`
-**내용**: 주요 섹션 목록
+**Type**: API/Design/Guide
+**File**: `docs/{path}`
+**Contents**: Key section list

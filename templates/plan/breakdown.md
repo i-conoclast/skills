@@ -1,6 +1,6 @@
-## 태스크 분해: `{목표}`
+## Task Breakdown: `{goal}`
 
-| # | 태스크 | 의존성 | 우선순위 |
-|---|--------|--------|---------|
+| # | Task | Dependencies | Priority |
+|---|------|--------------|----------|
 
-**실행 순서**: 의존성 기반 실행 그래프
+**Execution Order**: Dependency-based execution graph

@@ -1,10 +1,10 @@
-## 생성: `{파일}`
+## Created: `{file}`
 
-**구조**:
+**Structure**:
 ```
-파일 구조 다이어그램
+File structure diagram
 ```
 
-**주요 컴포넌트**: 클래스/함수 목록
-**의존성**: 필요한 import
-**다음 단계**: 추가 작업 체크리스트
+**Key Components**: Class/function list
+**Dependencies**: Required imports
+**Next Steps**: Additional work checklist

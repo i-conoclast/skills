@@ -1,7 +1,7 @@
-## 제약 조건: `{기능}`
+## Constraints: `{feature}`
 
-### 기술적 제약
-- 항목
+### Technical Constraints
+- Item
 
-### 비즈니스 제약
-- 항목
+### Business Constraints
+- Item

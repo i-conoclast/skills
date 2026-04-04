@@ -1,6 +1,6 @@
-## 라이브러리 조사: `{목적}`
+## Library Research: `{purpose}`
 
-| 라이브러리 | Stars | 업데이트 | 장점 | 단점 |
-|-----------|-------|---------|------|------|
+| Library | Stars | Last Updated | Pros | Cons |
+|---------|-------|--------------|------|------|
 
-**추천**: 추천 및 이유
+**Recommendation**: Recommendation and reasoning

@@ -1,27 +1,27 @@
-# 유닛 테스트 실행
+# Run Unit Tests
 
-리팩토링이나 기능 수정 후 빠른 검증을 위한 유닛 테스트를 실행합니다.
+Runs unit tests for quick verification after refactoring or feature modifications.
 
-## 실행할 작업
+## Tasks to Execute
 
-1. 변경된 파일 또는 지정된 모듈의 관련 테스트 식별
-2. 테스트 실행 (실패 시 중단)
-3. 실패한 테스트가 있으면 원인 분석 및 수정 제안
+1. Identify related tests for changed files or specified modules
+2. Run tests (stop on failure)
+3. If there are failed tests, analyze the cause and suggest fixes
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-- 인자가 없으면: 최근 변경된 파일 기준으로 관련 테스트 실행
-- 모듈명 지정: 해당 모듈 관련 테스트만 실행
-- 파일 경로: 해당 파일의 테스트 실행
+- No arguments: Run related tests based on recently changed files
+- Specify module name: Run only tests related to that module
+- File path: Run tests for that file
 
-## 주의사항
+## Important Notes
 
-- 파일 생성 없이 인라인으로 테스트 결과 분석
-- 실패 시 코드와 테스트 모두 확인하여 원인 파악
-- 수정이 필요하면 diff 형태로 제안
+- Analyze test results inline without creating files
+- On failure, check both code and tests to identify the cause
+- Suggest fixes in diff format if modifications are needed
 
-## 출력 형식
+## Output Format
 
-.claude/templates/verify/test-unit.md 형식
+.claude/templates/verify/test-unit.md format

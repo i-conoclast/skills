@@ -1,10 +1,10 @@
-## 수정: `{파일}`
+## Modified: `{file}`
 
-### 변경 #1: {설명}
-**위치**: L{line}
-**이유**: 변경 이유
-**영향**: 영향 범위
+### Change #1: {description}
+**Location**: L{line}
+**Reason**: Reason for change
+**Impact**: Impact scope
 
-### 검증 체크리스트
-- [ ] 기존 테스트 통과
-- [ ] 새 테스트 추가
+### Verification Checklist
+- [ ] Existing tests pass
+- [ ] New tests added

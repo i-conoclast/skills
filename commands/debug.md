@@ -1,29 +1,29 @@
-# 디버깅 도우미
+# Debugging Helper
 
-문제 상황을 분석하고 해결 방안을 제시합니다.
+Analyzes problem situations and suggests solutions.
 
-## 디버깅 워크플로우
+## Debugging Workflow
 
-### 1단계: 문제 파악
-- 에러 메시지 분석
-- 관련 로그 확인
-- 재현 조건 파악
+### Step 1: Identify the Problem
+- Analyze error messages
+- Check related logs
+- Identify reproduction conditions
 
-### 2단계: 원인 추적
-- 스택 트레이스 분석
-- 관련 코드 검토
-- 상태/데이터 흐름 추적
+### Step 2: Trace the Cause
+- Analyze stack traces
+- Review related code
+- Trace state/data flow
 
-### 3단계: 수정 및 검증
-- 수정 코드 제안 (diff 형태)
-- 관련 유닛 테스트 실행
-- E2E 테스트로 전체 흐름 확인
+### Step 3: Fix and Verify
+- Suggest fix code (in diff format)
+- Run related unit tests
+- Verify full flow with E2E tests
 
-## 사용자 입력
+## User Input
 
 $ARGUMENTS
 
-문제 상황을 설명해주세요:
-- 에러 메시지
-- 재현 방법
-- 예상 동작 vs 실제 동작
+Please describe the problem:
+- Error message
+- Steps to reproduce
+- Expected behavior vs actual behavior

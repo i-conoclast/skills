@@ -1,5 +1,5 @@
-## `{대상}` 관련 파일
+## `{target}` Related Files
 
-**소스**: 같은 모듈 파일 목록
-**테스트**: 관련 테스트 파일
-**문서**: 관련 문서 파일
+**Source**: File list in the same module
+**Tests**: Related test files
+**Docs**: Related documentation files

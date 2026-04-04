@@ -1,10 +1,10 @@
-## 검증 결과
+## Verification Results
 
-| 단계 | 상태 | 상세 |
-|------|------|------|
-| 린트 | ✅/❌ | |
-| 포맷 | ✅/❌ | |
-| 유닛 테스트 | ✅/❌ | |
+| Step | Status | Details |
+|------|--------|---------|
+| Lint | ✅/❌ | |
+| Format | ✅/❌ | |
+| Unit Tests | ✅/❌ | |
 | E2E | ✅/❌ | |
 
-**후속 작업**: 수정 필요 항목
+**Follow-up Actions**: Items requiring fixes

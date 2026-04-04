@@ -1,6 +1,6 @@
-## `{대상}` 변경 영향
+## `{target}` Change Impact
 
-**직접 영향**: N개 파일
-**간접 영향**: N개 파일
-**관련 테스트**: N개
-**위험도**: 🟢/🟡/🔴
+**Direct Impact**: N files
+**Indirect Impact**: N files
+**Related Tests**: N
+**Risk Level**: 🟢/🟡/🔴
